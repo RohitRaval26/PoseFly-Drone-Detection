@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="shutter_speed"
+        android:title="Rolling Shutter Speed"
+        android:backgroundTint="#333232"
+        android:summary="Select rolling shutter frequency (Hz)"
+        android:defaultValue="30"
+        android:entries="@array/shutter_speed_entries"
+        android:entryValues="@array/shutter_speed_values" />
+
+    <SwitchPreferenceCompat
+        android:key="shutter_enabled"
+        android:title="Enable Manual Shutter Speed"
+        android:summary="Toggle manual shutter speed on or off"
+        android:defaultValue="false" />
+
+</PreferenceScreen>
